@@ -1,0 +1,33 @@
+<proxyConfiguration xmlVersion="5" productVersion="0">
+ <ProxyConfiguration className="com.parasoft.stub.proxy.ProxyConfiguration" version="1.2.2">
+  <id>91c7d6de-9bb5-4a9e-84e9-9613fa2c0cfe-1554445068890</id>
+  <proxyCount>1</proxyCount>
+  <HttpProxyConnection className="com.parasoft.stub.proxy.HttpProxyConnection" version="1.10.4">
+   <append>true</append>
+   <file>recorded_traffic\LPtrafficfileDemo.txt</file>
+   <host>null</host>
+   <port>80</port>
+   <listenPath>/LoanProcessoIncomingProxy</listenPath>
+   <HttpProxyTargetConnection className="com.parasoft.stub.proxy.HttpProxyTargetConnection" version="1.1">
+    <keystore>null</keystore>
+    <keystorePass>AgAAACAlMuA/r8Qv3TWa4/zFv4Vld9zFCHgotoo3jlDVZgJvVw==</keystorePass>
+    <keystoreType>JKS</keystoreType>
+    <truststore>null</truststore>
+    <truststorePass>AgAAACATG1C8eaCQWiBHm9dJmndeLa6SJHTmpYB39cG0pkkrzg==</truststorePass>
+    <truststoreType>JKS</truststoreType>
+    <forwardPath>/LoanProcessorVirtualAsset</forwardPath>
+    <host>localhost</host>
+    <port>9080</port>
+   </HttpProxyTargetConnection>
+   <HttpProxyTargetConnection className="com.parasoft.stub.proxy.HttpProxyTargetConnection" version="1.1">
+    <keystore>null</keystore>
+    <keystorePass>AgAAACCvnI9X0N8s7to77Vh3HWsc4CyAJ9O7rZubYsOQZVt/pA==</keystorePass>
+    <keystoreType>JKS</keystoreType>
+    <truststore>null</truststore>
+    <truststorePass>AgAAACD0bPW75Z5o1mR+QOe7h3ycCadZCbb+P1HAXDLucB0Now==</truststorePass>
+    <truststoreType>JKS</truststoreType>
+    <port>80</port>
+   </HttpProxyTargetConnection>
+  </HttpProxyConnection>
+ </ProxyConfiguration>
+</proxyConfiguration>
