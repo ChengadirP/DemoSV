@@ -1,0 +1,29 @@
+<proxyConfiguration xmlVersion="5" productVersion="0">
+ <ProxyConfiguration className="com.parasoft.stub.proxy.ProxyConfiguration" version="1.2.2">
+  <id>0bc3eacd-d02d-4b05-8e40-3cddb17b1b35-1567502664971</id>
+  <proxyCount>1</proxyCount>
+  <HttpProxyConnection className="com.parasoft.stub.proxy.HttpProxyConnection" version="1.10.4">
+   <append>true</append>
+   <file>recorded_traffic\%n_%d_%t.txt</file>
+   <host>null</host>
+   <port>80</port>
+   <listenPath>/demobd</listenPath>
+   <HttpProxyTargetConnection className="com.parasoft.stub.proxy.HttpProxyTargetConnection" version="1.1">
+    <keystore>null</keystore>
+    <keystoreType>PKCS12</keystoreType>
+    <truststore>null</truststore>
+    <truststoreType>PKCS12</truststoreType>
+    <forwardPath>/LoanProcessorVirtualAsset</forwardPath>
+    <host>localhost</host>
+    <port>9080</port>
+   </HttpProxyTargetConnection>
+   <HttpProxyTargetConnection className="com.parasoft.stub.proxy.HttpProxyTargetConnection" version="1.1">
+    <keystore>null</keystore>
+    <keystoreType>PKCS12</keystoreType>
+    <truststore>null</truststore>
+    <truststoreType>PKCS12</truststoreType>
+    <port>80</port>
+   </HttpProxyTargetConnection>
+  </HttpProxyConnection>
+ </ProxyConfiguration>
+</proxyConfiguration>

@@ -1,0 +1,103 @@
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary=e12Arv0JPD5IlyBe1mUkIEPxeLnd1zhEFC4F6u
+Traffic-Format-Version: 1
+Protocol-Id: http-v1
+
+--e12Arv0JPD5IlyBe1mUkIEPxeLnd1zhEFC4F6u
+Content-Type: text/plain; charset=UTF-8
+Dest-Address: localhost:8006
+Secure: false
+Source-Address: 127.0.0.1:50302
+Timestamp: 1567490793693
+
+POST /brownbagproxy HTTP/1.1
+content-type: text/xml; charset=UTF-8
+accept: */*
+soapaction: ""
+user-agent: Apache-CXF/3.1.11
+cache-control: no-cache
+pragma: no-cache
+host: localhost:9080
+connection: keep-alive
+content-length: 408
+
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:requestLoan xmlns:ns2="http://service.parabank.parasoft.com/"><ns2:loanRequest><requestDate>2019-09-03T06:06:32.517Z</requestDate><customerId>12212</customerId><availableFunds>1245.67</availableFunds><loanAmount>1000</loanAmount><downPayment>10</downPayment></ns2:loanRequest></ns2:requestLoan></soap:Body></soap:Envelope>
+--e12Arv0JPD5IlyBe1mUkIEPxeLnd1zhEFC4F6u
+Content-Type: text/plain; charset=UTF-8
+Dest-Address: 127.0.0.1:50302
+Secure: false
+Source-Address: localhost:8006
+Timestamp: 1567490793867
+
+HTTP/1.1 200 
+Content-Type: text/xml;charset=UTF-8
+Content-Length: 400
+Date: Tue, 03 Sep 2019 06:06:33 GMT
+
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:requestLoanResponse xmlns:ns2="http://service.parabank.parasoft.com/"><ns2:loanResponse><responseDate>2019-09-03T06:06:33.859Z</responseDate><loanProviderName>Wealth Securities Dynamic Loans (WSDL)</loanProviderName><approved>true</approved></ns2:loanResponse></ns2:requestLoanResponse></soap:Body></soap:Envelope>
+--e12Arv0JPD5IlyBe1mUkIEPxeLnd1zhEFC4F6u
+Content-Type: text/plain; charset=UTF-8
+Dest-Address: localhost:8006
+Secure: false
+Source-Address: 127.0.0.1:50313
+Timestamp: 1567490843157
+
+POST /brownbagproxy HTTP/1.1
+content-type: text/xml; charset=UTF-8
+accept: */*
+soapaction: ""
+user-agent: Apache-CXF/3.1.11
+cache-control: no-cache
+pragma: no-cache
+host: localhost:9080
+connection: keep-alive
+content-length: 410
+
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:requestLoan xmlns:ns2="http://service.parabank.parasoft.com/"><ns2:loanRequest><requestDate>2019-09-03T06:07:23.109Z</requestDate><customerId>12212</customerId><availableFunds>1235.67</availableFunds><loanAmount>1000</loanAmount><downPayment>-100</downPayment></ns2:loanRequest></ns2:requestLoan></soap:Body></soap:Envelope>
+--e12Arv0JPD5IlyBe1mUkIEPxeLnd1zhEFC4F6u
+Content-Type: text/plain; charset=UTF-8
+Dest-Address: 127.0.0.1:50313
+Secure: false
+Source-Address: localhost:8006
+Timestamp: 1567490843166
+
+HTTP/1.1 200 
+Content-Type: text/xml;charset=UTF-8
+Content-Length: 400
+Date: Tue, 03 Sep 2019 06:07:23 GMT
+
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:requestLoanResponse xmlns:ns2="http://service.parabank.parasoft.com/"><ns2:loanResponse><responseDate>2019-09-03T06:07:23.163Z</responseDate><loanProviderName>Wealth Securities Dynamic Loans (WSDL)</loanProviderName><approved>true</approved></ns2:loanResponse></ns2:requestLoanResponse></soap:Body></soap:Envelope>
+--e12Arv0JPD5IlyBe1mUkIEPxeLnd1zhEFC4F6u
+Content-Type: text/plain; charset=UTF-8
+Dest-Address: localhost:8006
+Secure: false
+Source-Address: 127.0.0.1:50317
+Timestamp: 1567490859745
+
+POST /brownbagproxy HTTP/1.1
+content-type: text/xml; charset=UTF-8
+accept: */*
+soapaction: ""
+user-agent: Apache-CXF/3.1.11
+cache-control: no-cache
+pragma: no-cache
+host: localhost:9080
+connection: keep-alive
+content-length: 406
+
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:requestLoan xmlns:ns2="http://service.parabank.parasoft.com/"><ns2:loanRequest><requestDate>2019-09-03T06:07:39.688Z</requestDate><customerId>12212</customerId><availableFunds>1335.67</availableFunds><loanAmount>0</loanAmount><downPayment>-10</downPayment></ns2:loanRequest></ns2:requestLoan></soap:Body></soap:Envelope>
+--e12Arv0JPD5IlyBe1mUkIEPxeLnd1zhEFC4F6u
+Content-Type: text/plain; charset=UTF-8
+Dest-Address: 127.0.0.1:50317
+Secure: false
+Source-Address: localhost:8006
+Timestamp: 1567490859754
+
+HTTP/1.1 500 
+Content-Type: text/xml;charset=UTF-8
+Content-Length: 204
+Date: Tue, 03 Sep 2019 06:07:39 GMT
+Connection: close
+
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><soap:Fault><faultcode>soap:Server</faultcode><faultstring>/ by zero</faultstring></soap:Fault></soap:Body></soap:Envelope>
+--e12Arv0JPD5IlyBe1mUkIEPxeLnd1zhEFC4F6u--
